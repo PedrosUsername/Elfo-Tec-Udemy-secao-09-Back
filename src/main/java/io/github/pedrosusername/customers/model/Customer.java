@@ -25,4 +25,9 @@ public class Customer {
 
     @Column
     private LocalDate date;
+
+    @PrePersist
+    public void prePersist(){
+        setDate( LocalDate.now() );
+    }
 }
