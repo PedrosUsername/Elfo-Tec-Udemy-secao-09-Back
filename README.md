@@ -23,4 +23,5 @@ em seguida, no navegador, acesse a url:
 
 ### Observações:
 
-> O audio do curso poderia ser bem melhor 
+> O audio do curso poderia ser melhor
+> Muito bacana a anotacao @PrePersist

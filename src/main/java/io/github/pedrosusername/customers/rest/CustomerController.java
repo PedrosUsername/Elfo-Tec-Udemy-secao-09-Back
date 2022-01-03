@@ -38,4 +38,17 @@ public class CustomerController {
                 })
                 .orElseThrow( () -> new ResponseStatusException(HttpStatus.NOT_FOUND) );
     }
+
+    @PutMapping("{id}")
+    @ResponseStatus(HttpStatus.NO_CONTENT)
+    public void atualizar( @PathVariable Integer id,
+                           @RequestBody Customer customerNew ) {
+        repository
+                .findById(id)
+                .map( customer -> {
+                    customerNew.setId(customer.getId());
+                    return repository.save(customerNew);
+                })
+                .orElseThrow( () -> new ResponseStatusException(HttpStatus.NOT_FOUND) );
+    }
 }

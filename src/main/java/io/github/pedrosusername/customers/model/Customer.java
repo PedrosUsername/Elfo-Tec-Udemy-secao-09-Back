@@ -23,7 +23,7 @@ public class Customer {
     @Column(nullable = false, length = 11)
     private String cpf;
 
-    @Column
+    @Column(name = "data_cadastro", updatable = false)
     private LocalDate date;
 
     @PrePersist
