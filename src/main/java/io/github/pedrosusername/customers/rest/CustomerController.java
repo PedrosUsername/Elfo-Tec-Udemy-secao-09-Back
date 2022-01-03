@@ -7,6 +7,8 @@ import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.server.ResponseStatusException;
 
+import java.util.List;
+
 @RestController
 @RequestMapping("api/clientes")
 public class CustomerController {
@@ -18,6 +20,11 @@ public class CustomerController {
     @ResponseStatus(HttpStatus.CREATED)
     public Customer salvar( @RequestBody Customer customer ){
         return repository.save(customer);
+    }
+
+    @GetMapping
+    public List<Customer> obterTodos(){
+        return repository.findAll();
     }
 
     @GetMapping("{id}")
