@@ -20,7 +20,7 @@ Abra o terminal, e ponha o servidor para rodar com:
 $ ./mvnw spring-boot:run
 ```
 em seguida, no navegador, acesse a url:
-> 127.0.0.1/h2-console
+> 127.0.0.1:8080/h2-console
 
 abra outro terminal e, com o cURL teste o CRUD com os seguintes comandos:
 + CREATE:
@@ -41,5 +41,5 @@ $ curl -X DELETE localhost:8080/api/clientes/1
 ```
 ### Observações:
 
-> O audio do curso poderia ser melhor<br>
-> Muito bacana a anotacao @PrePersist<br>
++ O audio do curso poderia ser melhor
++ Muito bacana a anotacao @PrePersist
