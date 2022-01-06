@@ -37,3 +37,5 @@ $ localhost:8080/api/servicos-prestados?mes=1&nome=j
 
 + O audio do curso poderia ser melhor
 + A query feita no repositório de serviços é assustadora.
++ Fui até a aula 86 desse módulo. Volto aqui depois de explorar mais o curso.
++ Eu não conhecia o truque das variaveis de ambiente do Angular (src/environments)
