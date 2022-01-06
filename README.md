@@ -22,24 +22,18 @@ $ ./mvnw spring-boot:run
 em seguida, no navegador, acesse a url:
 > 127.0.0.1:8080/h2-console
 
-abra outro terminal e, com o cURL teste o CRUD com os seguintes comandos:
-+ CREATE:
+abra outro terminal e, com o cURL teste os end points de servicos com os seguintes comandos:
++ Criar serviço (só funciona se um cliente de id=1 já tiver sido criado):
 ```
-$ curl -X POST -H "Content-Type: application/json" -d '{ "name":"Jhonny", "cpf":"12345678901"}' localhost:8080/api/clientes
+$ curl -X POST -H "Content-Type: application/json" -d '{ "description":"service02", "price":"10", "clientId":1, "date":"01/02/2000"}' localhost:8080/api/servicos-prestados
 ```
-+ READ:
++ No navegador, pesquisar por um serviço com:
 ```
-$ curl -X GET localhost:8080/api/clientes/
+$ localhost:8080/api/servicos-prestados?mes=1&nome=j
 ```
-+ UPDATE:
-```
-$ curl -X PUT -H "Content-Type: application/json" -d '{"name":"Jose", "cpf":"12345678902"}' localhost:8080/api/clientes/1
-```
-+ DELETE:
-```
-$ curl -X DELETE localhost:8080/api/clientes/1
-```
+
+
 ### Observações:
 
 + O audio do curso poderia ser melhor
-+ Muito bacana a anotacao @PrePersist
++ A query feita no repositório de serviços é assustadora.
