@@ -1,5 +1,5 @@
 ## Angular + Spring Boot: Udemy Fullstack
-## Seção 9: API de Clientes
+## Seção 9: Cadastro de serviços prestados
 
 ### Pré-requisitos
 Gerado em:
