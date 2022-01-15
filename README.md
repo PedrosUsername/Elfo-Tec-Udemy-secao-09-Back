@@ -1,5 +1,5 @@
 ## Angular + Spring Boot: Udemy Fullstack
-## Seção 5: API de Clientes
+## Seção 9: API de Clientes
 
 ### Pré-requisitos
 Gerado em:
@@ -39,3 +39,7 @@ $ localhost:8080/api/servicos-prestados?mes=1&nome=j
 + A query feita no repositório de serviços é assustadora.
 + Fui até a aula 86 desse módulo. Volto aqui depois de explorar mais o curso.
 + Eu não conhecia o truque das variaveis de ambiente do Angular (src/environments)
++ Eu não conhecia a tecnica de codificar strings para Base64
++ 
++ keycloak = gerenciador de authServers?
++ jhipster = initialzr + o resto
