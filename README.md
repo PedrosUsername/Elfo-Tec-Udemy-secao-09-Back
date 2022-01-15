@@ -42,4 +42,4 @@ $ localhost:8080/api/servicos-prestados?mes=1&nome=j
 + Eu não conhecia a tecnica de codificar strings para Base64
 + 
 + keycloak = gerenciador de authServers?
-+ jhipster = initialzr + o resto
++ initialzr + jhipster = devs desempregados?
